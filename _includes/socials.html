@@ -2,7 +2,7 @@
     <ul class="">
         {% for link in site.data.social_medias %}
             <li>
-                <a href="{{ link.url }}" target="_blank">
+                <a href="{{ link.url }}" target="_blank" rel="nofollow">
                     {{ link.name | upcase }}
                 </a>
             </li>

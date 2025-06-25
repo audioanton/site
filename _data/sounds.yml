@@ -1,0 +1,11 @@
+- playlist_title: ""
+  description: ""
+  more_url: ""
+  genre:
+    - title: "action"
+    - title: "adventure"
+  sounds:
+    - sound_title: ""
+      source_url: ""
+    - sound_title: ""
+      source_url: ""
