@@ -1,0 +1,16 @@
+- name: nir
+  button_text: copywriter
+  quote: "working with anton, sound just works"
+  url: ""
+- name: vincent
+  button_text: flying fridge games
+  quote: "working with anton is a blast"
+  url: https://store.steampowered.com/app/2137260/Astro__Luna_VS_The_Entire_Solar_System/
+- name: "david & emil"
+  button_text: stonetech games
+  quote: "anton delivers great sounds"
+  url: https://store.steampowered.com/app/2403380/ATGANGA_Spectacle_for_the_Gods/
+- name: nenad
+  button_text: youtuber
+  quote: "the music elevated my video"
+  url: https://youtu.be/d4ieUu8W_zw

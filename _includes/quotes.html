@@ -1,0 +1,15 @@
+{% for quote in site.data.quotes %}
+    <div class="">
+        <q class="">
+            {{ quote.quote }}
+        </q>
+        <p class="">
+            {{ quote.name }}
+        </p>
+        <a class="" href="{{ quote.url }}" rel="nofollow" target="_blank">
+            <button>
+                {{ quote.button_text }}
+            </button>
+        </a>
+    </div>
+{% endfor %}
