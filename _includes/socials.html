@@ -1,0 +1,11 @@
+<nav role="social links" class="">
+    <ul class="">
+        {% for link in site.data.social_medias %}
+            <li>
+                <a href="{{ link.url }}" target="_blank">
+                    {{ link.name | upcase }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
