@@ -2,3 +2,15 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Anton"
+  - scope:
+      type: ""
+    values:
+      layout: "default"
