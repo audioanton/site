@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'pixeledregular';
   src: url('fonts/pixeled-webfont.woff2') format('woff2'),
-  url('fonts/pixeled-webfont.woff') format('woff');
+    url('fonts/pixeled-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,9 +30,9 @@ a,
 a:link,
 a:visited,
 a:active {
-    color: inherit;
-    text-decoration: inherit;
-    font-weight: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
 }
 
 a:hover {
@@ -44,7 +44,12 @@ body {
   overflow-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "pixeledregular", "Roboto Mono", "monospace", Serif;
   text-transform: uppercase;
   line-height: 1.6;
@@ -127,11 +132,12 @@ footer ul {
   padding-inline-start: 0;
 }
 
-ul > li {
+ul>li {
   margin: 0 0.2rem;
 }
 
-header > *, footer > * {
+header>*,
+footer>* {
   padding: 0.5rem;
 }
 
