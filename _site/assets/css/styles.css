@@ -38,19 +38,21 @@ h1 { font-size: xx-large; }
 
 h2 { font-size: large; padding: 0.2rem; }
 
-header { display: flex; flex-flow: row wrap; justify-content: space-between; align-items: end; padding: 0; background-color: var(--main-green); position: sticky; top: 0; z-index: 1; border-bottom: solid black 4px; box-shadow: 0 0.5rem var(--shadow-gray); }
+header { display: flex; flex-flow: row wrap; align-items: end; padding: 0 10%; background-color: var(--main-green); position: sticky; top: 0; z-index: 1; border-bottom: solid black 4px; box-shadow: 0 0.5rem var(--shadow-gray); }
 
 header ul, footer ul { list-style: none; padding-inline-start: 0; }
 
 ul > li { margin: 0 0.2rem; }
 
-header > *, footer > * { padding: 0.5rem; }
+header nav { margin-left: auto; }
+
+header > *, footer > * { padding: 0.5rem 0; }
 
 .logo { width: 60px; }
 
 footer a { padding: 0; }
 
-main { max-width: 80%; margin: auto; padding: 0.5rem; }
+main { max-width: 80%; margin: auto; padding: 0.5rem 0; }
 
 .flex-row { display: flex; align-items: flex-end; flex-flow: row wrap; column-gap: 0.1rem; }
 

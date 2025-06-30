@@ -107,9 +107,9 @@ h2 {
 header {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  // justify-content: space-around;
   align-items: end;
-  padding: 0;
+  padding: 0 10%;
   background-color: var(--main-green);
   position: sticky;
   top: 0;
@@ -128,9 +128,13 @@ ul>li {
   margin: 0 0.2rem;
 }
 
+header nav {
+  margin-left: auto;
+}
+
 header>*,
 footer>* {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .logo {
@@ -144,7 +148,7 @@ footer a {
 main {
   max-width: 80%;
   margin: auto;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .flex-row {
