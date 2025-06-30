@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 :root { --main-green: #70df17; --shadow-gray: #646464; --main-orange: #f7a530; --logo-orange: #f27830; }
 
 html { box-sizing: border-box; }
