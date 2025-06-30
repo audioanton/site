@@ -175,7 +175,7 @@ video {
   border: 0;
 }
 
-.centered-row {
+.centered {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
@@ -190,13 +190,20 @@ video {
   gap: 2rem;
 }
 
-@media screen and (min-width: 600px) {
-  .logo {
-    width: 100px;
+.two-columns {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .two-columns {
+    grid-template-columns: auto auto;
   }
 
-  .centered-row {
-    grid-template-columns: auto auto;
+  .logo {
+    width: 100px;
   }
 
   .align-right {
@@ -204,13 +211,13 @@ video {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .row-4-col {
-    grid-template-columns: auto auto auto auto;
-  }
-}
+// @media screen and (min-width: 1200px) {
+//   .two-columns {
+//     grid-template-columns: auto auto auto auto;
+//   }
+// }
 
-video {
+iframe {
   max-width: 100%;
 }
 

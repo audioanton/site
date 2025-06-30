@@ -60,17 +60,18 @@ video { max-width: 100%; height: auto; border-radius: 3px; }
 
 .medium-button { font-family: inherit; font-size: large; /*margin: auto;*/ min-width: 150px; min-height: 40px; height: auto; text-wrap: wrap; border: 0; }
 
-.centered-row { display: grid; grid-template-columns: auto; justify-content: center; gap: 10px; }
+.centered { display: grid; grid-template-columns: auto; justify-content: center; gap: 10px; }
 
 .spaced-around { justify-content: space-around; }
 
 .gap-mid { gap: 2rem; }
 
-@media screen and (min-width: 600px) { .logo { width: 100px; }
-  .centered-row { grid-template-columns: auto auto; }
+.two-columns { display: grid; grid-template-columns: auto; justify-content: space-around; gap: 10px; }
+
+@media screen and (min-width: 800px) { .two-columns { grid-template-columns: auto auto; }
+  .logo { width: 100px; }
   .align-right { align-self: flex-end; } }
-@media screen and (min-width: 1200px) { .row-4-col { grid-template-columns: auto auto auto auto; } }
-video { max-width: 100%; }
+iframe { max-width: 100%; }
 
 .quotebox { max-width: 420px; display: flex; flex-flow: column wrap; min-height: 200px; padding: 1rem; justify-content: space-evenly; /*gap: 20px;*/ }
 
