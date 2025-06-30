@@ -28,7 +28,8 @@ a:active {
 }
 
 a:hover {
-  color: darkslategray;
+  color: var(--shadow-gray);
+  text-decoration: underline;
 }
 
 body {
@@ -74,7 +75,8 @@ h6 {
   background-color: var(--main-green);
 }
 
-.color-orange {
+.color-orange,
+a.color-orange {
   color: var(--main-orange);
 }
 
@@ -109,7 +111,7 @@ header {
   flex-flow: row wrap;
   // justify-content: space-around;
   align-items: end;
-  padding: 0 10%;
+  // padding: 0 10%;
   background-color: var(--main-green);
   position: sticky;
   top: 0;
@@ -126,6 +128,13 @@ footer ul {
 
 ul>li {
   margin: 0 0.2rem;
+}
+
+header>div,
+footer>div {
+  width: 80%;
+  margin: auto;
+  padding: 0.5rem 0;
 }
 
 header nav {
@@ -156,6 +165,10 @@ main {
   align-items: flex-end;
   flex-flow: row wrap;
   column-gap: 0.1rem;
+}
+
+.margin-auto {
+  margin: auto;
 }
 
 .margin-top {
@@ -197,11 +210,22 @@ video {
 .two-columns {
   display: grid;
   grid-template-columns: auto;
-  justify-content: space-around;
+  justify-content: center;
   gap: 10px;
 }
 
-@media screen and (min-width: 800px) {
+
+
+@media screen and (min-width: 992px) {
+  main {
+    max-width: 60%;
+  }
+
+  header>div,
+  footer>div {
+    width: 60%;
+  }
+
   .two-columns {
     grid-template-columns: auto auto;
   }
@@ -215,12 +239,6 @@ video {
   }
 }
 
-// @media screen and (min-width: 1200px) {
-//   .two-columns {
-//     grid-template-columns: auto auto auto auto;
-//   }
-// }
-
 iframe {
   max-width: 100%;
 }
@@ -231,8 +249,8 @@ iframe {
   flex-flow: column wrap;
   min-height: 200px;
   padding: 1rem;
+  margin: 1rem;
   justify-content: space-evenly;
-  /*gap: 20px;*/
 }
 
 .vertical-center {
@@ -244,5 +262,20 @@ iframe {
 }
 
 footer {
+  display: grid;
   padding-bottom: 1rem;
+  place-items: center;
+}
+
+a.socials {
+  color: var(--main-orange);
+  text-decoration: none;
+}
+
+a.socials:hover {
+  color: var(--shadow-gray);
+}
+
+a.current {
+  color: var(--logo-orange)
 }
