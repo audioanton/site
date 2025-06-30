@@ -1,15 +1,17 @@
+<div class="two-columns">
 {% for quote in site.data.quotes %}
-    <div class="">
-        <q class="">
+    <div class="quotebox border-black shadowed-large">
+        <q class="text-strong">
             {{ quote.quote }}
         </q>
-        <p class="">
+        <p class="text-secondary vertical-center">
             {{ quote.name }}
         </p>
-        <a class="" href="{{ quote.url }}" rel="nofollow" target="_blank">
-            <button>
+        <a class="centered" href="{{ quote.url }}" rel="nofollow" target="_blank">
+            <button class="medium-button shadowed bg-color-orange border-black">
                 {{ quote.button_text }}
             </button>
         </a>
     </div>
 {% endfor %}
+</div>

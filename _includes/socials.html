@@ -1,11 +1,5 @@
-<nav role="social links" class="">
-    <ul class="">
+<nav role="social links">
         {% for link in site.data.social_medias %}
-            <li>
-                <a href="{{ link.url }}" target="_blank" rel="nofollow">
-                    {{ link.name | upcase }}
-                </a>
-            </li>
+            <a href="{{ link.url }}" target="_blank" rel="nofollow" class="{{ link.icon }} {{ "socials" }}"></a>
         {% endfor %}
-    </ul>
 </nav>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/2025/06/25/Jekyll-is-Awesome.html</loc>
+<loc>http://localhost:4000/site/2025/06/25/Jekyll-is-Awesome.html</loc>
 <lastmod>2025-06-25T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/about.html</loc>
+<loc>http://localhost:4000/site/about.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/blog.html</loc>
+<loc>http://localhost:4000/site/blog.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>http://localhost:4000/site/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/listen.html</loc>
+<loc>http://localhost:4000/site/listen.html</loc>
 </url>
 </urlset>

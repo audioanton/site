@@ -1,3 +1,4 @@
+<div class="two-columns spaced-between">
 {% for video in site.data.videos %}
     <figure>
         <iframe width="560" height="315" src="{{ video.url }}" title="{{ video.title }}" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
@@ -5,3 +6,4 @@
         <a href="{{ video.more }}" rel="nofollow" target="_blank">More</a>
     </figure>
 {% endfor %}
+</div>

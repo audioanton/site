@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="site" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/site/assets/css/styles.css">
+    <link rel="stylesheet" href="/site/assets/css/fonts.css">
+    
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/site/feed.xml" title="site" />
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Blog | site</title>
 <meta name="generator" content="Jekyll v3.10.0" />
@@ -12,22 +17,22 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="My personal website where I display my music and blog. Under development, feel free to suggest improvements." />
 <meta property="og:description" content="My personal website where I display my music and blog. Under development, feel free to suggest improvements." />
-<link rel="canonical" href="http://localhost:4000/blog.html" />
-<meta property="og:url" content="http://localhost:4000/blog.html" />
+<link rel="canonical" href="http://localhost:4000/site/blog.html" />
+<meta property="og:url" content="http://localhost:4000/site/blog.html" />
 <meta property="og:site_name" content="site" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Blog" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"My personal website where I display my music and blog. Under development, feel free to suggest improvements.","headline":"Blog","url":"http://localhost:4000/blog.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"My personal website where I display my music and blog. Under development, feel free to suggest improvements.","headline":"Blog","url":"http://localhost:4000/site/blog.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 <body>
     <header>
-    <a href="http://localhost:4000">
-        <div class="">
-        <a href="http://localhost:4000" class="">
+    <div>
+        <div class="flex-row">
+        <a href="">
     <img
               alt="My logo: an orange cartoony computer monitor with musical notes for eyes and a piano for a mouth"
               src="assets/images/logo_cropped.png"
@@ -36,25 +41,28 @@
     />
 </a>
         <h2>Audio<br />Anton</h2>
-        </div>
-    </a>
-    <nav>
+        <nav role="navigation">
   
-    <a href="/">Home</a>
+    <a href="/site/">HOME</a>
   
-    <a href="/about.html">About</a>
+    <a href="/site/about.html">ABOUT</a>
   
-    <a href="/listen.html">Listen</a>
+    <a href="/site/listen.html">LISTEN</a>
   
-    <a href="/blog.html">Blog</a>
+    <a href="/site/blog.html" class="current">BLOG</a>
   
 </nav>
+        </div>
+        
+    </div>
 </header>
-    <h1>Blog</h1>
-    <ul>
+    <main>
+        <div class="centered">
+        <h1>Blog</h1>
+        <ul>
   
     <li>
-      <h2><a href="/2025/06/25/Jekyll-is-Awesome.html">Jekyll Is Awesome</a></h2>
+      <h2><a href="/site/site/2025/06/25/Jekyll-is-Awesome.html">Jekyll Is Awesome</a></h2>
       <p>Today I learned about Jekyll with this awesome <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">tutorial</a>.
 Now I have deployed my website using Github Pages, ain’t it cool?
 That means I have to learn som markup aswell… Great! Can’t wait to see how this unfolds.</p>
@@ -62,48 +70,21 @@ That means I have to learn som markup aswell… Great! Can’t wait to see how t
     </li>
   
 </ul>
-    <footer class="">
-    <nav>
+        </div>
+    </main>
+    <footer class="margin-top">
+        <nav role="navigation">
   
-    <a href="/">Home</a>
+    <a href="/site/" class="color-orange">HOME</a>
   
-    <a href="/about.html">About</a>
+    <a href="/site/about.html" class="color-orange">ABOUT</a>
   
-    <a href="/listen.html">Listen</a>
+    <a href="/site/listen.html" class="color-orange">LISTEN</a>
   
-    <a href="/blog.html">Blog</a>
+    <a href="/site/blog.html" class="current">BLOG</a>
   
 </nav>
-    <nav role="social links" class="">
-    <ul class="">
-        
-            <li>
-                <a href="https://www.youtube.com/@audioanton" target="_blank" rel="nofollow">
-                    YOUTUBE
-                </a>
-            </li>
-        
-            <li>
-                <a href="https://www.linkedin.com/in/audioanton/" target="_blank" rel="nofollow">
-                    LINKEDIN
-                </a>
-            </li>
-        
-            <li>
-                <a href="https://www.facebook.com/profile.php?id=100086758519316" target="_blank" rel="nofollow">
-                    FACEBOOK
-                </a>
-            </li>
-        
-            <li>
-                <a href="https://github.com/audioanton" target="_blank" rel="nofollow">
-                    GITHUB
-                </a>
-            </li>
-        
-    </ul>
-</nav>
-    <a href="http://localhost:4000" class="">
+        <a href="">
     <img
               alt="My logo: an orange cartoony computer monitor with musical notes for eyes and a piano for a mouth"
               src="assets/images/logo_cropped.png"
@@ -111,6 +92,17 @@ That means I have to learn som markup aswell… Great! Can’t wait to see how t
               class="logo"
     />
 </a>
+        <nav role="social links">
+        
+            <a href="https://www.youtube.com/@audioanton" target="_blank" rel="nofollow" class="fa fa-youtube-square fa-3x socials"></a>
+        
+            <a href="https://www.linkedin.com/in/audioanton/" target="_blank" rel="nofollow" class="fa fa-linkedin-square fa-3x socials"></a>
+        
+            <a href="https://www.facebook.com/profile.php?id=100086758519316" target="_blank" rel="nofollow" class="fa fa-facebook-square fa-3x socials"></a>
+        
+            <a href="https://github.com/audioanton" target="_blank" rel="nofollow" class="fa fa-github-square fa-3x socials"></a>
+        
+</nav>
 </footer>
 </body>
 </html>
