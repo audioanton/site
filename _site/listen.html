@@ -6,8 +6,9 @@
     <title>Audio Anton - Listen</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/site/assets/css/styles.css">
+    <link rel="stylesheet" href="/site/assets/css/main.css">
     <link rel="stylesheet" href="/site/assets/css/fonts.css">
+    <link rel="stylesheet" href="/site/assets/css/tabs.css">
     <link rel="icon" type="image/x-icon" href="/site/assets/images/favicon.ico">
     
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/site/feed.xml" title="site" />
@@ -57,9 +58,35 @@
     <main>
         <div class="centered">
         <h1>Listen</h1>
-        <p>
-    Here I will post my music and sounds.
-</p>
+        
+     <button class="tablinks" onclick="openTab(event, 'music')">Music</button>
+
+     <button class="tablinks" onclick="openTab(event, 'sounds')">Sounds</button>
+
+
+
+     <div class="tabcontent" id="music">
+    <h3>MUSIC</h3>
+
+    
+        <p>Astro & Luna</p>
+    
+
+</div>
+
+     <div class="tabcontent" id="sounds">
+    <h3>SOUNDS</h3>
+
+    
+        <p>Retro Sounds</p>
+    
+
+</div>
+
+
+<script src="/site/assets/scripts/tabs.js"></script>
+
+
         </div>
     </main>
     <footer class="margin-top">

@@ -1,0 +1,8 @@
+<div class="tabcontent" id="{{ include.name }}">
+    <h3>{{ include.name | upcase }}</h3>
+
+    {% for sound in include.sounds %}
+        <p>{{ sound.playlist_title }}</p>
+    {% endfor %}
+
+</div>
