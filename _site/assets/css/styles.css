@@ -95,3 +95,9 @@ a.socials { color: var(--main-orange); text-decoration: none; }
 a.socials:hover { color: var(--shadow-gray); }
 
 a.current { color: var(--logo-orange); }
+
+.poster { position: relative; display: inline-flex; }
+
+.poster:after { content: ""; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: var(--poster-url); background-size: cover; transition: 1s ease; opacity: 1; cursor: pointer; }
+
+.poster-active:after { opacity: 0; pointer-events: none; }

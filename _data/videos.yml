@@ -2,15 +2,19 @@
   type: music
   url: https://www.youtube-nocookie.com/embed/QyskG4EMSWo?si=a9IbJIppEFCWWM6d&amp;controls=0
   more: https://store.steampowered.com/app/3136690/Typing_Fury_Around_the_World/
+  poster: typing_fury.webp
 - title: astro & luna
   type: music
   url: https://www.youtube-nocookie.com/embed/ZRly-YPk4kc?si=wld6pVLOsadNa2qx&amp;controls=0
   more: https://store.steampowered.com/app/2137260/Astro__Luna_VS_The_Entire_Solar_System/
+  poster: astro_luna_thumb.webp
 - title: "atganga: spectacle for the gods"
   type: sounds
   url: https://www.youtube-nocookie.com/embed/NYtfEE9QNEY?si=aVITRg-4xBztQCZl&amp;controls=0
   more: https://store.steampowered.com/app/2403380/ATGANGA_Spectacle_for_the_Gods/
+  poster: atganga_thumb.webp
 - title: capital.com
   type: music
   url: https://www.youtube-nocookie.com/embed/tEmxiWvpdlg?si=gMx7ZtboYrNTAfwH&amp;controls=0
   more: https://capital.com
+  poster: "atganga.webp"
