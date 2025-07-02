@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/site/assets/css/main.css">
     <link rel="stylesheet" href="/site/assets/css/fonts.css">
     <link rel="stylesheet" href="/site/assets/css/tabs.css">
+    <link rel="stylesheet" href="/site/assets/css/blog.css">
     <link rel="icon" type="image/x-icon" href="/site/assets/images/favicon.ico">
     
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/site/feed.xml" title="site" />
@@ -36,7 +37,7 @@
     <a href="/site/">
     <img
         alt="My logo: an orange cartoony computer monitor with musical notes for eyes and a piano for a mouth"
-        src="assets/images/logo_cropped.png"
+        src="/site/assets/images/logo_cropped.png"
         width="100"
         class="logo"
     />
@@ -58,17 +59,41 @@
     <main>
         <div class="centered">
         <h1>Blog</h1>
-        <ul>
+        <div class="post-div">
   
-    <li>
-      <h2><a href="/site/site/2025/06/25/Jekyll-is-Awesome.html">Jekyll Is Awesome</a></h2>
-      <p>Today I learned about Jekyll with this awesome <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">tutorial</a>.
+      <div class="card-post">
+    <a href="/site/2025/07/02/Go-is-Go/od!.html">
+        <h3>
+            Go Is Go..od!
+        </h3>
+    </a>
+    
+    <p>I’ve started learning Go (Golang?) with a <a href="https://quii.gitbook.io/learn-go-with-tests">great guide</a>. I am looking forward to improving my testing workflow. Also my old website is officially dead. This is now the place to be. I have a lot of ideas of what I want to achieve with it, but we’ll see how that progresses. There are a lot of things I want to implement, but some are a bit tricky without any backend, like a contact form. As they say, “Perfection is the enemy of progress”. That’s what they say right? Anyway that is my motto for this website. Have a great summer!</p>
+
+    <a href="/site/2025/07/02/Go-is-Go/od!.html">
+        <button class="medium-button shadowed bg-color-orange border-black">Read</button>
+    </a>
+</div>
+  
+      <div class="card-post">
+    <a href="/site/2025/06/25/Jekyll-is-Awesome.html">
+        <h3>
+            Jekyll Is Awesome
+        </h3>
+    </a>
+    
+    <p>Today I learned about Jekyll with this awesome <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">tutorial</a>.
 Now I have deployed my website using Github Pages, ain’t it cool?
 That means I have to learn som markup aswell… Great! Can’t wait to see how this unfolds.</p>
 
-    </li>
+    <a href="/site/2025/06/25/Jekyll-is-Awesome.html">
+        <button class="medium-button shadowed bg-color-orange border-black">Read</button>
+    </a>
+</div>
   
-</ul>
+</div>
+
+<script src="/site/assets/scripts/blog.js"></script>
         </div>
     </main>
     <footer class="margin-top">
@@ -97,7 +122,7 @@ That means I have to learn som markup aswell… Great! Can’t wait to see how t
         <a href="/site/">
     <img
         alt="My logo: an orange cartoony computer monitor with musical notes for eyes and a piano for a mouth"
-        src="assets/images/logo_cropped.png"
+        src="/site/assets/images/logo_cropped.png"
         width="100"
         class="logo"
     />

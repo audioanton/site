@@ -1,11 +1,10 @@
 ---
     title: Blog
 ---
-<ul>
+<div class="post-div">
   {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url | prepend: site.baseurl | relative_url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
+      {% include card-post.html post=post %}
   {% endfor %}
-</ul>
+</div>
+
+<script src="{{ "/assets/scripts/blog.js" | relative_url }}"></script>

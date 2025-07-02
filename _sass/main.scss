@@ -110,9 +110,7 @@ h2 {
 header {
   display: flex;
   flex-flow: row wrap;
-  /* justify-content: space-around; */
   align-items: end;
-  /* padding: 0 10%; */
   background-color: var(--main-green);
   position: sticky;
   top: 0;
@@ -163,7 +161,6 @@ main {
 
 main > div.centered {
   display: block;
-  /* width: 100%; */
 }
 
 .flex-row {

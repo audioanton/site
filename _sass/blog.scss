@@ -1,0 +1,29 @@
+@import "main";
+
+@media screen and (min-width: 992px) {
+    .post-div {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 3rem;
+    }
+}
+
+.card-post {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+    // justify-items: center;
+    height: 300px;
+}
+
+.card-post p {
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.card-post h3 {
+    height: 3rem;
+    margin-bottom: 0.5rem;
+}
