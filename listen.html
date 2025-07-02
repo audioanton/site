@@ -2,13 +2,19 @@
     title: Listen
 ---
 
-{% for tab in site.data.tabs %}
-     {% include tab.html name=tab.name %}
-{% endfor %}
+<div class="tabs">
+     <div class="tabdiv">
+          {% for tab in site.data.tabs %}
+               {% include tab.html name=tab.name %}
+          {% endfor %}
+     </div>
 
-{% for tab in site.data.tabs %}
-     {% include tabcontent.html name=tab.name sounds=tab.content %}
-{% endfor %}
+     {% for tab in site.data.tabs %}
+          {% include tabcontent.html name=tab.name sounds=tab.content %}
+     {% endfor %}
+</div>
+
+
 
 <script src="{{ "/assets/scripts/tabs.js" | relative_url }}"></script>
 

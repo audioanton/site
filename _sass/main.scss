@@ -99,6 +99,7 @@ a.color-orange {
 
 h1 {
   font-size: xx-large;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -109,9 +110,9 @@ h2 {
 header {
   display: flex;
   flex-flow: row wrap;
-  // justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: end;
-  // padding: 0 10%;
+  /* padding: 0 10%; */
   background-color: var(--main-green);
   position: sticky;
   top: 0;
@@ -160,6 +161,11 @@ main {
   padding: 0.5rem 0;
 }
 
+main > div.centered {
+  display: block;
+  /* width: 100%; */
+}
+
 .flex-row {
   display: flex;
   align-items: flex-end;
@@ -181,6 +187,15 @@ video {
   border-radius: 3px;
 }
 
+div.quotebox > a.centered:hover {
+  text-decoration: none;
+}
+
+button.medium-button:hover {
+  background-color: var(--main-green);
+  box-shadow: 0.3rem 0.3rem lightgray;
+}
+
 .medium-button {
   font-family: inherit;
   font-size: large;
@@ -194,6 +209,7 @@ video {
 
 .centered {
   display: grid;
+  width: 100%;
   grid-template-columns: auto;
   justify-content: center;
   gap: 10px;
@@ -273,7 +289,7 @@ a.socials {
 }
 
 a.socials:hover {
-  color: var(--shadow-gray);
+  color: var(--logo-orange);
 }
 
 a.current {

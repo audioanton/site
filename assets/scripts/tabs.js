@@ -1,19 +1,22 @@
 function openTab(event, tabName) {
-    hideTabs()
-    removeActive()
-    // use classList.toggle() instead of inline style
-    document.getElementById(tabName).style.display = "block"
+    hideTab()
+    toggleActiveButton(event)
+    makeTabVisible(document.getElementById(tabName))
+}
+
+function makeTabVisible(tab) {
+    tab.classList.replace("hidden", "tabcontent")
+}
+
+function hideTab() {
+    document.querySelector(".tabcontent").classList.replace("tabcontent", "hidden")
+}
+
+function toggleActiveButton(event) {
+    document.querySelector(".active").classList.remove("active")
     event.currentTarget.classList.add("active")
 }
 
-function hideTabs() {
-    document.querySelectorAll(".tabcontent").forEach(
-        tab => tab.style.display = "none"
-    )
-}
-
-function removeActive() {
-    const active = document.querySelector(".active")
-    if (active !== null)
-        active.classList.remove("active")
-}
+// make first tab visible
+makeTabVisible(document.querySelector(".hidden"))
+document.querySelector(".tablinks").classList.add("active")

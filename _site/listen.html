@@ -58,14 +58,17 @@
     <main>
         <div class="centered">
         <h1>Listen</h1>
-        
-     <button class="tablinks" onclick="openTab(event, 'music')">Music</button>
+        <div class="tabs">
+     <div class="tabdiv">
+          
+               <button class="tablinks text-large" onclick="openTab(event, 'music')">Music</button>
+          
+               <button class="tablinks text-large" onclick="openTab(event, 'sounds')">Sounds</button>
+          
+     </div>
 
-     <button class="tablinks" onclick="openTab(event, 'sounds')">Sounds</button>
-
-
-
-     <div class="tabcontent" id="music">
+     
+          <div class="hidden" id="music">
     <h3>MUSIC</h3>
 
     
@@ -73,8 +76,8 @@
     
 
 </div>
-
-     <div class="tabcontent" id="sounds">
+     
+          <div class="hidden" id="sounds">
     <h3>SOUNDS</h3>
 
     
@@ -82,6 +85,9 @@
     
 
 </div>
+     
+</div>
+
 
 
 <script src="/site/assets/scripts/tabs.js"></script>
