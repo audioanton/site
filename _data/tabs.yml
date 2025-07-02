@@ -1,0 +1,24 @@
+- name: music
+  content:
+    - playlist_title: "Astro & Luna"
+      description: ""
+      more_url: ""
+      genre: ""
+      songs:
+        - song_title: "Astro's Journey"
+          source_url: ""
+        - song_title: ""
+          source_url: ""
+- name: sounds
+  content:
+    - playlist_title: "Retro Sounds"
+      description: ""
+      more_url: ""
+      genre:
+        - title: "action"
+        - title: "adventure"
+      sounds:
+        - sound_title: "beep"
+          source_url: ""
+        - sound_title: ""
+          source_url: ""

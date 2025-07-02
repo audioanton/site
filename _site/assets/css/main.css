@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 :root { --main-green: #70df17; --shadow-gray: #646464; --main-orange: #f7a530; --logo-orange: #f27830; }
 
 html { box-sizing: border-box; }
@@ -35,11 +34,11 @@ h1, h2, h3, h4, h5, h6 { font-family: "pixeledregular", "Roboto Mono", "monospac
 
 .border-black { border: solid black 3px; border-radius: 2px; }
 
-h1 { font-size: xx-large; }
+h1 { font-size: xx-large; margin-bottom: 1rem; }
 
 h2 { font-size: large; padding: 0.2rem; }
 
-header { display: flex; flex-flow: row wrap; align-items: end; background-color: var(--main-green); position: sticky; top: 0; z-index: 1; border-bottom: solid black 4px; box-shadow: 0 0.5rem var(--shadow-gray); }
+header { display: flex; flex-flow: row wrap; /* justify-content: space-around; */ align-items: end; /* padding: 0 10%; */ background-color: var(--main-green); position: sticky; top: 0; z-index: 1; border-bottom: solid black 4px; box-shadow: 0 0.5rem var(--shadow-gray); }
 
 header ul, footer ul { list-style: none; padding-inline-start: 0; }
 
@@ -57,6 +56,8 @@ footer a { padding: 0; }
 
 main { max-width: 80%; margin: auto; padding: 0.5rem 0; }
 
+main > div.centered { display: block; /* width: 100%; */ }
+
 .flex-row { display: flex; align-items: flex-end; flex-flow: row wrap; column-gap: 0.1rem; }
 
 .margin-auto { margin: auto; }
@@ -65,9 +66,13 @@ main { max-width: 80%; margin: auto; padding: 0.5rem 0; }
 
 video { max-width: 100%; height: auto; border-radius: 3px; }
 
+div.quotebox > a.centered:hover { text-decoration: none; }
+
+button.medium-button:hover { background-color: var(--main-green); box-shadow: 0.3rem 0.3rem lightgray; }
+
 .medium-button { font-family: inherit; font-size: large; /*margin: auto;*/ min-width: 150px; min-height: 40px; height: auto; text-wrap: wrap; border: 0; }
 
-.centered { display: grid; grid-template-columns: auto; justify-content: center; gap: 10px; }
+.centered { display: grid; width: 100%; grid-template-columns: auto; justify-content: center; gap: 10px; }
 
 .spaced-around { justify-content: space-around; }
 
@@ -92,6 +97,6 @@ footer { display: grid; padding-bottom: 1rem; place-items: center; }
 
 a.socials { color: var(--main-orange); text-decoration: none; }
 
-a.socials:hover { color: var(--shadow-gray); }
+a.socials:hover { color: var(--logo-orange); }
 
 a.current { color: var(--logo-orange); }

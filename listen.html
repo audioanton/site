@@ -1,6 +1,23 @@
 ---
     title: Listen
 ---
-<p>
-    Here I will post my music and sounds.
-</p>
+
+<div class="tabs">
+     <div class="tabdiv">
+          {% for tab in site.data.tabs %}
+               {% include tab.html name=tab.name %}
+          {% endfor %}
+     </div>
+
+     {% for tab in site.data.tabs %}
+          {% include tabcontent.html name=tab.name sounds=tab.content %}
+     {% endfor %}
+</div>
+
+
+
+<script src="{{ "/assets/scripts/tabs.js" | relative_url }}"></script>
+
+{% comment %} 
+https://www.w3schools.com/howto/howto_js_tabs.asp
+{% endcomment %}
