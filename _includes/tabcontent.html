@@ -1,8 +1,19 @@
 <div class="hidden" id="{{ include.name }}">
     <h3>{{ include.name | upcase }}</h3>
 
-    {% for sound in include.sounds %}
-        <p>{{ sound.playlist_title }}</p>
+    {% for playlist in include.content %}
+        <div class="playlist">
+            <div class="playlist-description">
+                <img src="{{ playlist.image | prepend: 'assets/images/' | relative_url }}">
+                <div>
+                    <h4>{{ playlist.title }}</h4>
+                    <p>{{ playlist.description }}</p>
+                </div>
+            </div>
+            {% for sound in playlist.sounds %}
+                <iframe style="border: 0; width: 100%; height: 42px;" src="{{ sound.embed_url }}" seamless><a href="{{ sound.link }}">{{ sound.title }}</a></iframe>
+            {% endfor %}
+        </div>
     {% endfor %}
 
 </div>

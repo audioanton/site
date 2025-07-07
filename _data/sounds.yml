@@ -1,0 +1,28 @@
+- name: music
+  content:
+    - title: "Roboson"
+      description: "Three songs about Roboson"
+      image: roboson-1.png
+      genre: "Chiptunes"
+      sounds:
+        - title: "Sayonara Sara"
+          embed_url: https://bandcamp.com/EmbeddedPlayer/track=2743824135/size=small/bgcol=ffffff/linkcol=e99708/artwork=none/transparent=true/
+          link: https://audioanton.bandcamp.com/album/roboson
+        - title: "Butt Out Booger"
+          embed_url: https://bandcamp.com/EmbeddedPlayer/album=347309711/size=small/bgcol=ffffff/linkcol=e99708/artwork=none/track=845761306/transparent=true/
+          link: https://audioanton.bandcamp.com/album/roboson
+        - title: "Groovy Grove"
+          embed_url: https://bandcamp.com/EmbeddedPlayer/album=347309711/size=small/bgcol=ffffff/linkcol=e99708/artwork=none/track=4120572363/transparent=true/
+          link: https://audioanton.bandcamp.com/album/roboson
+- name: sounds
+  content:
+    - title: "Retro Sounds"
+      description: "Coming soon..."
+      image: "roboson-1.png"
+      genre:
+        - title: "action"
+        - title: "adventure"
+      sounds:
+        - title: ""
+          embed_url: ""
+          link: ""
