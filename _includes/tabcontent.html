@@ -2,12 +2,18 @@
     <h3>{{ include.name | upcase }}</h3>
 
     {% for playlist in include.content %}
-        {% comment %} add playlist image, description..  {% endcomment %}
-        {% for sound in playlist.sounds %}
-            <iframe style="border: 0; width: 400px; height: 42px;" src="{{ sound.embed_url }}" seamless>
-            {% comment %} <a href="https://audioanton.bandcamp.com/track/sayonara">Sayonara by audio anton</a> {% endcomment %}
-            </iframe>
-        {% endfor %}
+        <div class="playlist">
+            <div class="playlist-description">
+                <img src="{{ playlist.image | prepend: 'assets/images/' | relative_url }}">
+                <div>
+                    <h4>{{ playlist.title }}</h4>
+                    <p>{{ playlist.description }}</p>
+                </div>
+            </div>
+            {% for sound in playlist.sounds %}
+                <iframe style="border: 0; width: 100%; height: 42px;" src="{{ sound.embed_url }}" seamless><a href="{{ sound.link }}">{{ sound.title }}</a></iframe>
+            {% endfor %}
+        </div>
     {% endfor %}
 
 </div>

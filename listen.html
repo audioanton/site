@@ -4,20 +4,14 @@
 
 <div class="tabs">
      <div class="tab-div">
-          {% for tab in site.data.tabs %}
-               {% include tab.html name=tab.name %}
+          {% for playlist in site.data.sounds %}
+               {% include tab.html name=playlist.name %}
           {% endfor %}
      </div>
 
-     {% for tab in site.data.tabs %}
-          {% include tabcontent.html name=tab.name content=tab.content %}
+     {% for playlist in site.data.sounds %}
+          {% include tabcontent.html name=playlist.name content=playlist.content %}
      {% endfor %}
 </div>
 
-
-
 <script src="{{ "/assets/scripts/tabs.js" | relative_url }}"></script>
-
-{% comment %} 
-https://www.w3schools.com/howto/howto_js_tabs.asp
-{% endcomment %}

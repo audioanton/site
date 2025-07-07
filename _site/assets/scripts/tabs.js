@@ -5,6 +5,7 @@ function openTab(event, tabName) {
 }
 
 function makeTabVisible(tab) {
+    console.log('make visible')
     tab.classList.replace("hidden", "tabcontent")
 }
 
@@ -19,4 +20,5 @@ function toggleActiveButton(event) {
 
 // make first tab visible
 makeTabVisible(document.querySelector(".hidden"))
+
 document.querySelector(".tablinks").classList.add("active")

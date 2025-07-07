@@ -38,4 +38,36 @@
     display: none;
 }
 
+.playlist > div > img {
+    max-width: 100px;
+    width: 50%;
+    height: auto;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.playlist > .playlist-description {
+    display: flex;
+    flex-direction: row;
+}
+
+.playlist-description > div {
+    padding: 0 0.5rem;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.playlist {
+    margin-top: 1rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: white;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
 
