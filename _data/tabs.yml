@@ -1,14 +1,14 @@
 - name: music
   content:
-    - playlist_title: "Astro & Luna"
-      description: ""
+    - playlist_title: "Roboson"
+      description: "Three songs about Roboson"
       more_url: ""
-      genre: ""
-      songs:
-        - song_title: "Astro's Journey"
-          source_url: ""
+      genre: "Chiptunes"
+      sounds:
+        - song_title: "Sayonara Sara"
+          embed_url: https://bandcamp.com/EmbeddedPlayer/track=2743824135/size=small/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/
         - song_title: ""
-          source_url: ""
+          embed_url: ""
 - name: sounds
   content:
     - playlist_title: "Retro Sounds"
@@ -19,6 +19,6 @@
         - title: "adventure"
       sounds:
         - sound_title: "beep"
-          source_url: ""
+          embed_url: ""
         - sound_title: ""
-          source_url: ""
+          embed_url: ""
