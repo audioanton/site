@@ -1,12 +1,11 @@
-<div class="card-post">
-    <a href="{{ include.post.url | relative_url }}">
-        <h3>
-            {{ include.post.title }}
-        </h3>
-    </a>
+<div class="card-post shadowed border-black">
+    <h3>
+        {{ include.post.title }}
+    </h3>
     {% comment %} insert image {% endcomment %}
     {{ include.post.excerpt }}
-    <a href="{{ include.post.url | relative_url }}">
-        <button class="medium-button shadowed bg-color-orange border-black">Read</button>
+    <a href="{{ include.post.url | relative_url }}" class="medium-button shadowed bg-color-orange border-black">
+        Read
+        {% comment %} <button class="medium-button shadowed bg-color-orange border-black">Read</button> {% endcomment %}
     </a>
 </div>

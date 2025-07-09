@@ -34,6 +34,8 @@ h1, h2, h3, h4, h5, h6 { font-family: "pixeledregular", "Roboto Mono", "monospac
 
 .border-black { border: solid black 3px; border-radius: 2px; }
 
+p.border-black { padding: 1rem; }
+
 h1 { font-size: xx-large; margin-bottom: 1rem; }
 
 h2 { font-size: large; padding: 0.2rem; }
@@ -68,7 +70,7 @@ video { max-width: 100%; height: auto; border-radius: 3px; }
 
 div.quotebox > a.centered:hover { text-decoration: none; }
 
-button.medium-button:hover { background-color: var(--main-green); box-shadow: 0.3rem 0.3rem lightgray; }
+a.medium-button:hover { background-color: var(--main-green); box-shadow: 0.3rem 0.3rem lightgray; }
 
 .medium-button { font-family: inherit; font-size: large; /*margin: auto;*/ min-width: 150px; min-height: 40px; height: auto; text-wrap: wrap; border: 0; }
 
@@ -100,3 +102,7 @@ a.socials { color: var(--main-orange); text-decoration: none; }
 a.socials:hover { color: var(--logo-orange); }
 
 a.current { color: var(--logo-orange); }
+
+iframe { border-radius: 2px; }
+
+a.medium-button { align-content: center; max-width: 80%; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: 0.1rem; }

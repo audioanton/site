@@ -19,4 +19,4 @@
 
 .playlist-description > div { padding: 0 0.5rem; align-self: flex-end; display: flex; flex-direction: column; gap: 0; }
 
-.playlist { margin-top: 1rem; border: 2px solid black; display: flex; flex-direction: column; padding: 0; background-color: white; max-height: 300px; overflow-y: scroll; }
+.playlist { margin-top: 1rem; border: 2px solid black; display: flex; flex-direction: column; padding: 0; background-color: white; max-height: 300px; overflow-y: scroll; border-radius: 2px; }

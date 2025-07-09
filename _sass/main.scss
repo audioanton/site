@@ -97,6 +97,10 @@ a.color-orange {
   border-radius: 2px;
 }
 
+p.border-black {
+  padding: 1rem;
+}
+
 h1 {
   font-size: xx-large;
   margin-bottom: 1rem;
@@ -188,7 +192,7 @@ div.quotebox > a.centered:hover {
   text-decoration: none;
 }
 
-button.medium-button:hover {
+a.medium-button:hover {
   background-color: var(--main-green);
   box-shadow: 0.3rem 0.3rem lightgray;
 }
@@ -291,4 +295,17 @@ a.socials:hover {
 
 a.current {
   color: var(--logo-orange)
+}
+
+iframe {
+  border-radius: 2px;
+}
+
+a.medium-button {
+    align-content: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 0.1rem;
 }
