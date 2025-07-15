@@ -111,6 +111,12 @@ h2 {
   padding: 0.2rem;
 }
 
+img.border-black {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
 header {
   display: flex;
   flex-flow: row wrap;
@@ -200,7 +206,6 @@ a.medium-button:hover {
 .medium-button {
   font-family: inherit;
   font-size: large;
-  /*margin: auto;*/
   min-width: 150px;
   min-height: 40px;
   height: auto;
@@ -216,6 +221,16 @@ a.medium-button:hover {
   gap: 10px;
 }
 
+.two-columns {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+}
+
+.justify-centered {
+  justify-content: center;
+}
+
 .spaced-around {
   justify-content: space-around;
 }
@@ -224,18 +239,14 @@ a.medium-button:hover {
   gap: 2rem;
 }
 
-.two-columns {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
-  gap: 10px;
-}
-
-
-
 @media screen and (min-width: 992px) {
   main {
     max-width: 60%;
+  }
+
+  img {
+    max-width: 300px;
+    margin: 0;
   }
 
   header>div,
@@ -258,14 +269,14 @@ a.medium-button:hover {
 
 iframe {
   max-width: 100%;
+  border-radius: 2px;
 }
 
-.quotebox {
-  max-width: 420px;
+div.quotebox {
+  max-width: 350px;
   display: flex;
   flex-flow: column wrap;
   min-height: 200px;
-  padding: 1rem;
   margin: 1rem;
   justify-content: space-evenly;
 }
@@ -297,10 +308,6 @@ a.current {
   color: var(--logo-orange)
 }
 
-iframe {
-  border-radius: 2px;
-}
-
 a.medium-button {
     align-content: center;
     max-width: 80%;
@@ -308,4 +315,12 @@ a.medium-button {
     margin-right: auto;
     margin-top: auto;
     margin-bottom: 0.1rem;
+}
+
+div.two-columns > div {
+  padding: 1rem;
+}
+
+ul {
+  padding-inline-start: 1rem;
 }
