@@ -6,6 +6,6 @@ function shortenText(text, length) {
 }
 
 // shorten all excerpts
-document.querySelectorAll("p").forEach(excerpt => excerpt.textContent = shortenText(excerpt.textContent, 80))
+// document.querySelectorAll("p").forEach(excerpt => excerpt.textContent = shortenText(excerpt.textContent, 80))
 // shorten all headings
-document.querySelectorAll("h3").forEach(heading => heading.textContent = shortenText(heading.textContent, 40))
+// document.querySelectorAll("h3").forEach(heading => heading.textContent = shortenText(heading.textContent, 40))

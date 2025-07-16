@@ -40,7 +40,7 @@ h1 { font-size: xx-large; margin-bottom: 1rem; }
 
 h2 { font-size: large; padding: 0.2rem; }
 
-img.border-black { width: 100%; max-width: 400px; margin: auto; }
+img.about-image { width: 100%; max-width: 400px; margin: auto; }
 
 header { display: flex; flex-flow: row wrap; align-items: end; background-color: var(--main-green); position: sticky; top: 0; z-index: 1; border-bottom: solid black 4px; box-shadow: 0 0.5rem var(--shadow-gray); }
 

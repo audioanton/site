@@ -17,6 +17,7 @@ defaults:
     values:
       layout: "post"
       author: "Anton"
+      image: "assets/images/anton_profile.jpg" 
   - scope:
       path: ""
       type: "pages"

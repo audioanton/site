@@ -2,8 +2,24 @@
     layout: default
 ---
 <div class="centered">
-<strong class="text-large">
-  {{ page.date | date_to_string }} - {{ page.author }}
-</strong>
-{{ content }}
+  <img src="{{ page.image | relative_url }}" class="post-image border-black shadowed-large">
+  <p class="date">
+    {{ page.date | date_to_string }}
+  </p>
+  <p class="author">
+    {{ page.author }}
+  </p>
+  <div class="post-content border-black shadowed-large">   
+    {{ content }}
+  </div>
+  
+  <div role="navigation" class="post-nav">
+    {% if page.previous %}
+      <a href="{{ page.previous.url |  relative_url }}">&laquo; Previous</a>
+    {% endif %}
+    {% if page.next %}
+      <a href="{{ page.next.url |  relative_url  }}">Next &raquo;</a>  
+    {% endif %}
+  </div>
+   
 </div>
