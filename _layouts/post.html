@@ -2,13 +2,22 @@
     layout: default
 ---
 <div class="centered">
+  <p class="tags">tags: 
+    {{ page.tags | array_to_sentence_string: "|" }}
+  </p>
+  
   <img src="{{ page.image | relative_url }}" class="post-image border-black shadowed-large">
-  <p class="date">
-    {{ page.date | date_to_string }}
-  </p>
-  <p class="author">
-    {{ page.author }}
-  </p>
+
+  <div class="blog-info">
+    <p class="author">
+      {{ page.author }}
+    </p>
+    <p>//</p>
+    <p class="date">
+      {{ page.date | date_to_string }}
+    </p>
+  </div>
+
   <div class="post-content border-black shadowed-large">   
     {{ content }}
   </div>

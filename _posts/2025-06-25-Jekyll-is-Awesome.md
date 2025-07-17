@@ -1,3 +1,7 @@
+---
+    tags: "programming news"
+---
+
 Today I learned about Jekyll with this awesome {% include post-link.html link="https://jekyllrb.com/docs/step-by-step/01-setup/" text="tutorial" %}.
 <!--more-->
 
