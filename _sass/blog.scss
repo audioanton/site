@@ -41,8 +41,9 @@ img.post-image {
     text-decoration: none;
 }
 
-.card-post a:hover {
-    color: inherit;
+.card-post:hover {
+    background-color: var(--main-orange);
+    cursor: pointer;
 }
 
 .card-row img {

@@ -1,6 +1,8 @@
 function shortenText(text, length) {
-    if (text.length > length)
-        return text.slice(0, length).trimEnd() + '...'
+    if (text.length > length) {
+        wordEnd = text.slice(length).search(/\s|\./) + length
+        return text.slice(0, wordEnd) + '...'
+    }        
     else 
         return text
 }
@@ -11,9 +13,7 @@ document.querySelectorAll(".card-post").forEach(
     })
 );
 
-// TODO: change div background on hover also
-
 // shorten all excerpts
-// document.querySelectorAll("p").forEach(excerpt => excerpt.textContent = shortenText(excerpt.textContent, 80))
-// shorten all headings
-// document.querySelectorAll("h3").forEach(heading => heading.textContent = shortenText(heading.textContent, 40))
+document.querySelectorAll("p").forEach(
+    excerpt => excerpt.innerText = shortenText(excerpt.innerText, 60)
+)
