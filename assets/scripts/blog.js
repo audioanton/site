@@ -5,6 +5,14 @@ function shortenText(text, length) {
         return text
 }
 
+document.querySelectorAll(".card-post").forEach(
+    div => div.addEventListener("click", () => {
+        location.href=div.dataset.url
+    })
+);
+
+// TODO: change div background on hover also
+
 // shorten all excerpts
 // document.querySelectorAll("p").forEach(excerpt => excerpt.textContent = shortenText(excerpt.textContent, 80))
 // shorten all headings
