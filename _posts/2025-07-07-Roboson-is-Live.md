@@ -1,3 +1,7 @@
+---
+    tags: "music"
+---
+
 I published my new mini-ep today titled {% include post-link.html link="https://audioanton.bandcamp.com/album/roboson" text="Roboson" %}.
 <!--more-->
 

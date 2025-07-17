@@ -32,7 +32,6 @@ img.post-image {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    // height: 210px;
     padding: 0.5rem;
 }
 
@@ -59,13 +58,17 @@ img.post-image {
 
 p.author {
     font-weight: bold;
-    font-size: 1.5rem;
+    // font-size: large;
 }
 
 p.date {
-    margin-top: 1rem;
     font-style: italic;
-    text-decoration: underline;
+    // text-decoration: underline;
+}
+
+p.tags {
+    color: var(--main-orange);
+    font-style: italic;
 }
 
 a.external {
@@ -104,3 +107,10 @@ div.post-nav {
     font-size: 0.8rem;
 }
 
+.blog-info {
+    margin: 0.5rem 0;
+    display: flex;
+    font-size: large;
+    gap: 1rem;
+    align-items: end;
+}

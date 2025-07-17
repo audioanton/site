@@ -17,7 +17,8 @@ defaults:
     values:
       layout: "post"
       author: "Anton"
-      image: "assets/images/anton_profile.jpg" 
+      image: "assets/images/anton_profile.jpg"
+      tags: news
   - scope:
       path: ""
       type: "pages"
