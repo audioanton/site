@@ -39,28 +39,21 @@ img.post-image {
 .card-post a {
     color: none;
     text-decoration: none;
-    margin-top: auto;
-    margin-bottom: 0.1rem;
-    margin-left: 0;
 }
 
 .card-post a:hover {
     color: inherit;
 }
 
-.card-post img {
+.card-row img {
     max-width: 50%;
-}
-
-.card-post p {
-    min-height: 75px;
-}
-
-.card-post h3 {
-    height: 4.5rem;
-    text-align: -webkit-center;
-    background-color: var(--main-green);
+    object-fit: contain;
+    justify-self: left;
     border-radius: 2px;
+}
+
+.card-row p {
+    min-height: 75px;
 }
 
 p.author {
@@ -96,10 +89,13 @@ div.post-nav {
 }
 
 .card-row {
+    margin-top: auto;
+    padding-top: 0.5rem;
     display: flex;
     gap: 1rem;
     height: 120px;
     overflow: scroll;
+    
 }
 
 .card-row p {
