@@ -17,7 +17,7 @@ defaults:
     values:
       layout: "post"
       author: "Anton"
-      image: "assets/images/anton_profile.jpg"
+      image: "assets/images/profixel_orange_512.png"
       tags: news
   - scope:
       path: ""
