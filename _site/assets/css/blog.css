@@ -128,7 +128,7 @@ img.post-image { max-width: 300px; }
 
 .card-post:hover { background-color: var(--main-orange); cursor: pointer; }
 
-.card-row img { max-width: 50%; object-fit: contain; justify-self: left; border-radius: 2px; }
+.card-row img { max-width: 50%; object-fit: contain; justify-self: left; border: 2px solid black; border-radius: 2px; }
 
 .card-row p { min-height: 75px; }
 

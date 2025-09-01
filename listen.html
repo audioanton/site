@@ -4,14 +4,23 @@
 
 <div class="tabs border-black shadowed-large">
      <div class="tab-div">
-          {% for playlist in site.data.sounds %}
-               {% include tab.html name=playlist.name %}
+          {% include tab.html name="music" %}
+
+          {% include tab.html name="sounds" %}
+     </div>
+
+     <div class="hidden" id="music">
+          {% for album in site.data.albums %}
+               {% include bandcamp-album.html src=album.src href=album.href description=album.description %}
           {% endfor %}
      </div>
 
-     {% for playlist in site.data.sounds %}
-          {% include tabcontent.html name=playlist.name content=playlist.content %}
-     {% endfor %}
+     <div class="hidden" id="sounds">
+          <p>Sounds coming soon...er or later</p>
+          <br>
+          <img src="{{ "assets/images/profixel_transparent_512.png" | relative_url }}" width="150px">
+     </div>
+
 </div>
 
 <script src="{{ "/assets/scripts/tabs.js" | relative_url }}"></script>
