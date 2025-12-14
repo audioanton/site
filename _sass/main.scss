@@ -295,17 +295,26 @@ footer {
   place-items: center;
 }
 
+nav.socials {
+    background: var(--main-green);
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
 a.socials {
-  color: var(--main-orange);
   text-decoration: none;
 }
 
 a.socials:hover {
-  color: var(--logo-orange);
+  color: var(--shadow-gray);
 }
 
 a.current {
-  color: var(--logo-orange)
+    background: var(--main-orange);
+    color: black;
+    padding: 0 2px;
+    box-shadow: 3px 3px var(
+    --shadow-gray);
 }
 
 a.medium-button {
