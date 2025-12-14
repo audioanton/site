@@ -1,5 +1,7 @@
+{% assign page_normalized = page.url | remove: '.html' %}
+
 <nav>
   {% for item in site.data.navigation %}
-    <a href="{{ item.link | relative_url }}"{% if page.url == item.link %} class="current"{% elsif include.class %} class="{{ include.class }}"{% endif %}>{{ item.name | upcase }}</a>
+    <a href="{{ item.link | relative_url }}"{% if page_normalized == item.link %} class="current"{% elsif include.class %} class="{{ include.class }}"{% endif %}>{{ item.name | upcase }}</a>
   {% endfor %}
 </nav>

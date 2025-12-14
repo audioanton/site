@@ -6,6 +6,8 @@
     background-color: var(--main-orange);
     border: solid black 2px;
     box-shadow: 0.5rem 0.5rem var(--shadow-gray);
+    max-width: 740px;
+    margin: auto;
 }
 
 .tab-div {
@@ -69,7 +71,5 @@
     max-height: 300px;
     overflow-y: scroll;
     border-radius: 2px;
-    
+
 }
-
-
