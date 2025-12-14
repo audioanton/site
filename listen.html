@@ -11,14 +11,14 @@
 
      <div class="hidden" id="music">
           {% for album in site.data.albums %}
-               {% include bandcamp-album.html src=album.src href=album.href description=album.description %}
+               {% include bandcamp-album.html src=album.src href=album.href description=album.description title=album.title %}
           {% endfor %}
      </div>
 
      <div class="hidden" id="sounds">
           <p>Sounds coming soon...er or later</p>
           <br>
-          <img src="{{ "assets/images/profixel_transparent_512.png" | relative_url }}" width="150px">
+          <img src="{{ "assets/images/profixel_transparent_512.png" | relative_url }}" width="150px" height="150px">
      </div>
 
 </div>

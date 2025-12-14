@@ -1,9 +1,14 @@
-<div class="card-post shadowed border-black bg-color-green" data-url ="{{ include.post.url | relative_url }}">
-        <h3>
-            {{ include.post.title }}
-        </h3>
-        <div class="card-row">
-            <img src="{{ include.post.image | relative_url }}" class="">
-            {{ include.post.excerpt }}
-        </div>
+<div
+    class="card-post shadowed border-black bg-color-green"
+    data-url="{{ include.post.url | relative_url }}"
+>
+    <h2>{{ include.post.title }}</h2>
+    <div class="card-row">
+        <img
+            src="{{ include.post.image | relative_url }}"
+            alt="{{ include.post.alt }}"
+            class=""
+        />
+        {{ include.post.excerpt }}
+    </div>
 </div>

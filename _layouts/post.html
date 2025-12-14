@@ -1,34 +1,29 @@
 ---
-    layout: default
+layout: default
 ---
+
 <div class="centered">
-  <p class="tags">tags: 
-    {{ page.tags | array_to_sentence_string: "|" }}
-  </p>
-  
-  <img src="{{ page.image | relative_url }}" class="post-image border-black shadowed-large">
+    <p class="tags">tags: {{ page.tags | array_to_sentence_string: "|" }}</p>
 
-  <div class="blog-info">
-    <p class="author">
-      {{ page.author }}
-    </p>
-    <p>//</p>
-    <p class="date">
-      {{ page.date | date_to_string }}
-    </p>
-  </div>
+    <img
+        src="{{ page.image | relative_url }}"
+        alt="{{ page.alt }}"
+        class="post-image border-black shadowed-large"
+    />
 
-  <div class="post-content border-black shadowed-large">   
-    {{ content }}
-  </div>
-  
-  <div role="navigation" class="post-nav">
-    {% if page.previous %}
-      <a href="{{ page.previous.url |  relative_url }}">&laquo; Previous</a>
-    {% endif %}
-    {% if page.next %}
-      <a href="{{ page.next.url |  relative_url  }}">Next &raquo;</a>  
-    {% endif %}
-  </div>
-   
+    <div class="blog-info">
+        <p class="author">{{ page.author }}</p>
+        <p>//</p>
+        <p class="date">{{ page.date | date_to_string }}</p>
+    </div>
+
+    <div class="post-content border-black shadowed-large">{{ content }}</div>
+
+    <div role="navigation" class="post-nav">
+        {% if page.previous %}
+        <a href="{{ page.previous.url |  relative_url }}">&laquo; Previous</a>
+        {% endif %} {% if page.next %}
+        <a href="{{ page.next.url |  relative_url  }}">Next &raquo;</a>
+        {% endif %}
+    </div>
 </div>

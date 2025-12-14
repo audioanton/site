@@ -72,7 +72,6 @@ p.date {
 }
 
 p.tags {
-    color: var(--main-orange);
     font-style: italic;
 }
 
@@ -93,8 +92,10 @@ div.post-nav {
     justify-content: space-evenly;
 }
 
-.post-nav > a {
-    color: var(--main-orange)
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .card-row {

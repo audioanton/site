@@ -1,5 +1,6 @@
 ---
   image: assets/images/snes_small.jpg
+  alt: A photo of my Snes console in a card board box
 ---
 
 I am keeping busy this summer with projects and many daytrips! How do you prefer spending your summer?

@@ -18,7 +18,8 @@ defaults:
       layout: "post"
       author: "Anton"
       image: "assets/images/profixel_orange_512.png"
-      tags: news
+      alt: "A pixel art style portrait of me, Anton."
+      tags: [news]
   - scope:
       path: ""
       type: "pages"
