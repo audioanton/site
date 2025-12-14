@@ -16,6 +16,10 @@
     border-bottom: solid black 2px;
 }
 
+.tablinks button {
+    color: black;
+}
+
 .tabs button {
     background-color: inherit;
     border: none;
@@ -71,5 +75,4 @@
     max-height: 300px;
     overflow-y: scroll;
     border-radius: 2px;
-
 }
