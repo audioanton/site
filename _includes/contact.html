@@ -1,19 +1,28 @@
-<div class="form border-black shadowed-large">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/meoydvrn" method="POST">
-        <label for="email">Email</label>
-        <input type="email" name="email" placeholder="email@example.com" />
-        <label for="message">Message</label>
-        <textarea name="message" placeholder="...I love your music!"></textarea>
-        <div
-            class="g-recaptcha"
-            data-sitekey="6Lc1vCssAAAAAB5q3GJ1vM4hOmcrDVXbSCEVWnTs"
-        ></div>
-        <button
-            type="submit"
-            class="centered medium-button shadowed bg-color-orange border-black"
+<div id="formModal" class="formModal">
+    <div class="form border-black shadowed-large contactForm">
+        <span id="closeForm" class="closeForm">&times;</span>
+        <h2>Contact Me</h2>
+        <form
+            id="contactForm"
+            action="https://formspree.io/f/meoydvrn"
+            method="POST"
         >
-            Send
-        </button>
-    </form>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="email@example.com" />
+            <label for="message">Message</label>
+            <textarea
+                name="message"
+                placeholder="...I love your music!"
+            ></textarea>
+            <button
+                class="g-recaptcha centered medium-button shadowed bg-color-orange border-black"
+                data-sitekey="6LewsywsAAAAANezGamLU5jRe2svJDEq5XDV93lw"
+                data-callback="onSubmit"
+                data-action="submit"
+                class="centered medium-button shadowed bg-color-orange border-black"
+            >
+                Send
+            </button>
+        </form>
+    </div>
 </div>

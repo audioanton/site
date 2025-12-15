@@ -6,6 +6,7 @@
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            defer
         />
         <link
             rel="stylesheet"
@@ -25,13 +26,19 @@
         />
         <link
             rel="stylesheet"
-            href="{{ '/assets/css/form.css' | relative_url }}"
+            href="{{ '/assets/css/contact.css' | relative_url }}"
         />
         <link
             rel="icon"
             type="image/x-icon"
             href="/site/assets/images/favicon.ico"
         />
+        <script
+            src="https://www.google.com/recaptcha/enterprise.js?render=6LewsywsAAAAANezGamLU5jRe2svJDEq5XDV93lw"
+            async
+            defer
+        ></script>
+        <script src="{{ "/assets/scripts/contact.js" | relative_url }}" defer></script>
 
         {% feed_meta %} {% seo %}
     </head>
@@ -43,6 +50,6 @@
                 {{ content }}
             </div>
         </main>
-        {% include footer.html %}
+        {% include contact.html %} {% include footer.html %}
     </body>
 </html>
