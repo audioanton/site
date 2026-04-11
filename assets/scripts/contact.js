@@ -9,3 +9,9 @@ contactModal.addEventListener("click", (event) => {
 closeContactBtn.addEventListener("click", (event) => {
   dialogElement.close();
 });
+
+dialogElement.addEventListener("click", (event) => {
+  if (event.target === dialogElement) {
+    dialogElement.close();
+  }
+});
