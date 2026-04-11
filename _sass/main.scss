@@ -10,13 +10,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-green: #295e00;
-    --shadow-gray: #4b4a4a;
-    --main-orange: #5a3c0f;
-    --logo-orange: #883606;
-    --main-bg: #252525;
-    --main-text: #afafaf;
-    --text-active: white;
+    --main-green: #01022eee;
+    --shadow-gray: #313131a9;
+    --main-orange: #424242;
+    --logo-orange: #272727;
+    --main-bg: #202020;
+    --main-text: #cacaca;
+    --text-active: #cacaca;
+  }
+
+  img,
+  .video-container {
+    filter: sepia(50%) brightness(75%);
+  }
+
+  .playlist {
+    filter: grayscale(70%) brightness(75%);
   }
 }
 
