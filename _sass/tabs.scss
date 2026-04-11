@@ -2,77 +2,78 @@
 @use "main";
 
 .tabs {
-    overflow: hidden;
-    background-color: var(--main-orange);
-    border: solid black 2px;
-    box-shadow: 0.5rem 0.5rem var(--shadow-gray);
-    max-width: 740px;
-    margin: auto;
+  overflow: hidden;
+  background-color: var(--main-orange);
+  border: solid var(--main-text) 2px;
+  box-shadow: 0.5rem 0.5rem var(--shadow-gray);
+  max-width: 740px;
+  margin: auto;
 }
 
 .tab-div {
-    display: flex;
-    background-color: var(--logo-orange);
-    border-bottom: solid black 2px;
+  display: flex;
+  background-color: var(--logo-orange);
+  border-bottom: solid var(--main-text) 2px;
 }
 
 .tablinks button {
-    color: black;
+  color: black;
 }
 
 .tabs button {
-    background-color: inherit;
-    border: none;
-    border-right: solid black 2px;
-    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  background-color: inherit;
+  border: none;
+  border-right: solid var(--main-text) 2px;
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
 }
 
 .tabs button:hover {
-    background-color: var(--shadow-gray);
+  background-color: var(--shadow-gray);
 }
 
 .tabs button.active {
-    background-color: var(--main-orange);
+  color: var(--text-active);
+  background-color: var(--main-orange);
 }
 
 .tabcontent {
-    display: block;
-    padding: 1rem;
+  display: block;
+  padding: 1rem;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .playlist > div > img {
-    max-width: 100px;
-    width: 50%;
-    height: auto;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
+  max-width: 100px;
+  width: 50%;
+  height: auto;
+  border-bottom: 2px solid var(--main-text);
+  border-right: 2px solid var(--main-text);
 }
 
 .playlist > .playlist-description {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .playlist-description > div {
-    padding: 0 0.5rem;
-    align-self: flex-end;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+  padding: 0 0.5rem;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .playlist {
-    margin-top: 1rem;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    background-color: white;
-    max-height: 300px;
-    overflow-y: scroll;
-    border-radius: 2px;
+  margin-top: 1rem;
+  border: 2px solid var(--main-text);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: white;
+  max-height: 300px;
+  overflow-y: scroll;
+  border-radius: 2px;
 }

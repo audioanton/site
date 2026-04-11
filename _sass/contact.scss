@@ -4,6 +4,7 @@ div.contactFormContainer {
   height: 100%;
   width: 100%;
   padding: 10px;
+  color: var(--main-text);
 }
 
 button.contactButton {
@@ -11,7 +12,7 @@ button.contactButton {
   border: none;
   font-weight: bolder;
   background-color: var(--main-orange);
-  color: black;
+  color: var(--main-text);
   padding: 10px;
 }
 
@@ -57,6 +58,7 @@ span.closeForm {
 }
 
 .form form > button {
+  color: var(--main-text);
   max-width: 25%;
   align-content: center;
   align-self: flex-end;
