@@ -1,69 +1,71 @@
-div.formModal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-div.contactForm {
-    max-width: 400px;
-    width: 80%;
-    min-height: 300px;
-    margin: auto;
-    background-color: var(--main-green);
+div.contactFormContainer {
+  position: relative;
+  background-color: var(--main-green);
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 }
 
 button.contactButton {
-    font-size: 1rem;
-    border: none;
-    font-weight: bolder;
-    background-color: var(--main-orange);
-    color: black;
-    padding: 10px;
+  font-size: 1rem;
+  border: none;
+  font-weight: bolder;
+  background-color: var(--main-orange);
+  color: black;
+  padding: 10px;
 }
 
 form > button.medium-button:hover {
-    background-color: black;
-    color: var(--main-orange);
+  background-color: black;
+  color: var(--main-orange);
 }
 
 button.contactButton:hover {
-    background-color: black;
-    color: var(--main-orange);
+  background-color: black;
+  color: var(--main-orange);
+}
+
+.dialog {
+  position: absolute;
+  margin: 0 auto;
+  top: 25%;
+  width: 90vw;
+  max-width: 500px;
+  padding: 0;
 }
 
 @media (min-width: 800px) {
-    button.contactButton {
-        margin: 0 25px;
-    }
+  button.contactButton {
+    margin: 0 25px;
+  }
+
+  dialog {
+    width: 50vw;
+  }
 }
 
 span.closeForm {
-    cursor: pointer;
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-div .form {
-    padding: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
 .form form {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .form form > button {
-    max-width: 25%;
-    align-content: center;
-    align-self: flex-end;
+  max-width: 25%;
+  align-content: center;
+  align-self: flex-end;
 }
 
 .form form > textarea {
-    min-height: 100px;
+  min-height: 100px;
+}
+
+dialog[data-modal-backdrop]::backdrop {
+  background: hwb(0 0% 100% / 0.8);
 }

@@ -1,28 +1,25 @@
-<div id="formModal" class="formModal">
-    <div class="form border-black shadowed-large contactForm">
-        <span id="closeForm" class="closeForm">&times;</span>
-        <h2>Contact Me</h2>
-        <form
-            id="contactForm"
-            action="https://formspree.io/f/meoydvrn"
-            method="POST"
-        >
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="email@example.com" />
-            <label for="message">Message</label>
-            <textarea
-                name="message"
-                placeholder="...I love your music!"
-            ></textarea>
-            <button
-                class="g-recaptcha centered medium-button shadowed bg-color-orange border-black"
-                data-sitekey="6LewsywsAAAAANezGamLU5jRe2svJDEq5XDV93lw"
-                data-callback="onSubmit"
-                data-action="submit"
-                class="centered medium-button shadowed bg-color-orange border-black"
-            >
-                Send
-            </button>
-        </form>
-    </div>
-</div>
+<dialog id="contactDialog" class="dialog" data-modal-backdrop closedby="any">
+  <div class="form contactFormContainer">
+    <span id="closeContactBtn" class="closeForm">&times;</span>
+    <h2>Contact Me</h2>
+    <form
+      id="contactForm"
+      action="https://formspree.io/f/meoydvrn"
+      method="POST"
+    >
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="email@example.com" />
+      <label for="message">Message</label>
+      <textarea name="message" placeholder="...I love your music!"></textarea>
+      <button
+        class="g-recaptcha centered medium-button shadowed bg-color-orange border-black"
+        data-sitekey="6LewsywsAAAAANezGamLU5jRe2svJDEq5XDV93lw"
+        data-callback="onSubmit"
+        data-action="submit"
+        class="centered medium-button shadowed bg-color-orange submitButton"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</dialog>

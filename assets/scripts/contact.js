@@ -1,21 +1,11 @@
-const formModal = document.getElementById("formModal");
-const contactButton = document.getElementById("contactButton");
-const closeSpan = document.getElementById("closeForm");
+const dialogElement = document.getElementById("contactDialog");
+const closeContactBtn = document.getElementById("closeContactBtn");
+const contactModal = document.getElementById("contactButton");
 
-contactButton.onclick = function () {
-  formModal.style.display = "flex";
-};
+contactModal.addEventListener("click", (event) => {
+  dialogElement.showModal();
+});
 
-closeSpan.onclick = function () {
-  formModal.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == formModal) {
-    formModal.style.display = "none";
-  }
-};
-
-function onSubmit(token) {
-  document.getElementById("contactForm").submit();
-}
+closeContactBtn.addEventListener("click", (event) => {
+  dialogElement.close();
+});
