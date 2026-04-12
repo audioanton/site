@@ -5,18 +5,16 @@
   --logo-orange: #f27830;
   --main-bg: white;
   --main-text: black;
-  --text-active: #f7a530;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-green: #01022eee;
+    --main-green: #01023f;
     --shadow-gray: #313131a9;
     --main-orange: #424242;
     --logo-orange: #272727;
     --main-bg: #202020;
     --main-text: #cacaca;
-    --text-active: #cacaca;
   }
 
   img,
@@ -47,7 +45,7 @@ a,
 a:link,
 a:visited,
 a:active {
-  color: var(--text-active);
+  color: var(--main-text);
   text-decoration: inherit;
   font-weight: inherit;
 }
@@ -338,7 +336,6 @@ a.socials:hover {
 
 a.current {
   background: var(--main-orange);
-  color: var(--text-active);
   padding: 0 2px;
   box-shadow: 3px 3px var(--shadow-gray);
 }
@@ -350,6 +347,7 @@ a.medium-button {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: 0.1rem;
+  color: var(--main-text);
 }
 
 div.two-columns > div {

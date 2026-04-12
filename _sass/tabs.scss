@@ -29,11 +29,11 @@
 }
 
 .tabs button:hover {
-  background-color: var(--shadow-gray);
+  background-color: var(--main-green);
+  color: var(--main-text);
 }
 
 .tabs button.active {
-  color: var(--text-active);
   background-color: var(--main-orange);
 }
 
