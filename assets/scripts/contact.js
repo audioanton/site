@@ -1,17 +1,20 @@
 const dialogElement = document.getElementById("contactDialog");
-const closeContactBtn = document.getElementById("closeContactBtn");
-const contactModal = document.getElementById("contactButton");
 
-contactModal.addEventListener("click", (event) => {
+function openContactModal() {
   dialogElement.showModal();
-});
+}
 
-closeContactBtn.addEventListener("click", (event) => {
+function closeContactModal() {
   dialogElement.close();
-});
+}
 
 dialogElement.addEventListener("click", (event) => {
   if (event.target === dialogElement) {
     dialogElement.close();
   }
 });
+
+function toggleMobileNav() {
+  const links = document.querySelector(".mobile-links")
+  links.classList.toggle('mobile-links-hidden');
+}

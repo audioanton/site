@@ -1,7 +1,24 @@
 {% assign page_normalized = page.url | remove: '.html' %}
 
-<nav>
+<nav class="desktop-nav">
   {% for item in site.data.navigation %}
     <a href="{{ item.link | relative_url }}"{% if page_normalized == item.link %} class="current"{% elsif include.class %} class="{{ include.class }}"{% endif %}>{{ item.name | upcase }}</a>
   {% endfor %}
+  <button class="contactButton shadowed" onclick="openContactModal()">
+      {{ "contact" | upcase }}
+  </button>
 </nav>
+
+<div class="mobile-nav">
+  <span class="mobile-nav-button"onclick="toggleMobileNav()">
+    <i class="fa fa-bars"></i>
+  </span>
+  <div class="mobile-links mobile-links-hidden ">
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link | relative_url }}"{% if page_normalized == item.link %} class="current"{% elsif include.class %} class="{{ include.class }}"{% endif %}>{{ item.name | upcase }}</a>
+    {% endfor %}
+    <button class="contactButton shadowed" onclick="openContactModal()">
+      {{ "contact" | upcase }}
+  </button>
+  </div>
+</div>
