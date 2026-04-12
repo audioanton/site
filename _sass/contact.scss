@@ -1,10 +1,30 @@
+.dialog {
+  position: fixed;
+  padding: 0;
+  border: none; // Safari adds a default border you'll want to clear
+  width: 90%;
+  max-width: 500px;
+  
+  /* Use auto instead of fit-content for better Safari support */
+  height: auto; 
+  max-height: 80vh; /* Prevents it from overflowing the screen */
+  
+  /* Vertical centering fix */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
 div.contactFormContainer {
   position: relative;
   background-color: var(--main-green);
-  height: 100%;
+  /* Change height from 100% to auto to let content dictate size */
+  height: auto; 
   width: 100%;
-  padding: 10px;
+  padding: 20px; // Increased padding for better mobile feel
   color: var(--main-text);
+  box-sizing: border-box; // Ensures padding doesn't add to width
 }
 
 button.contactButton {
@@ -24,16 +44,6 @@ form > button.medium-button:hover {
 button.contactButton:hover {
   background-color: black;
   color: var(--main-orange);
-}
-
-.dialog {
-  position: fixed;
-  margin: 0 auto;
-  top: 25%;
-  width: 90%;
-  max-width: 500px;
-  padding: 0;
-  height: fit-content;
 }
 
 .desktop-nav {
